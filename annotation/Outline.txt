@@ -1,0 +1,26 @@
+---------- React Typescript ----------
+Requires: React 102
+
+----- Learning Objectives -----
+A Typescript crashcourse with:
+-Variables
+-Functions
+-Objects
+-Arrays
+-Tuples
+Implementing Typescript with React basics:
+-Typescript and Props
+-Typescript with State
+-Typescript in Functional Components
+
+----- Online Course -----
+https://redventures.udemy.com/course/typescript-the-complete-developers-guide/learn
+Section 17, 254-261 - React with Typescript
+Section 17, 262-277 - React & Redux with Typescript
+
+----- Supplemental Material -----
+A video guide to general Typescript on the Curve - https://thecurve.redventures.com/share/asset/view/799
+Deep dive into React and Typescript - https://basarat.gitbooks.io/typescript/docs/jsx/react.html
+
+----- Project -----
+Take your React 101 project and convert it to a Typescript React project. Compare your final code to the Repo here:
