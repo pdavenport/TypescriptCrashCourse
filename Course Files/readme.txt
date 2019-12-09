@@ -56,3 +56,4 @@ In the file '1variables.ts' we'll first look at how to assign variables' data ty
 '6props.tsx' starts implementing TS into React with props
 '7state.tsx' will deep dive a bit into state and how React & TS initializes state
 '8funcComponents.tsx' is a quick peek into to annotating functional components
+'9finalProject.js' is your instructions for completing the project
