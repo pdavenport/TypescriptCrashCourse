@@ -16,11 +16,11 @@ Implementing Typescript with React basics:
 ----- Online Course -----
 https://redventures.udemy.com/course/typescript-the-complete-developers-guide/learn
 Section 17, 254-261 - React with Typescript
-Section 17, 262-277 - React & Redux with Typescript
 
 ----- Supplemental Material -----
 A video guide to general Typescript on the Curve - https://thecurve.redventures.com/share/asset/view/799
 Deep dive into React and Typescript - https://basarat.gitbooks.io/typescript/docs/jsx/react.html
 
 ----- Project -----
-Take your React 101 project and convert it to a Typescript React project. Compare your final code to the Repo here:
+For the final project, I'd like you to take your React 201 Giphy project and implement Typescript in your main app.js/jsx file.
+See 
