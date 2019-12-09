@@ -62,3 +62,6 @@ interface AppState {
 // We can now pass this in the same way as our props:
 class App extends React.Component<AppProps, AppState>
 // Now if you add another 'this.state' as we did before and hover over it, you should now see your state object defined properly.
+
+// One last note: If you are not passing any props to your main App Component, you can simply leave your props definition as an empty object:
+class App extends React.Component<{}, AppState>
