@@ -32,8 +32,10 @@ See '9finalProject.js' for more info.
 Typescript helps to catch errors when writing code.
 Typescript is Javascript where you've defined the 'types' you'd like your values to have.
 This way, your IDE (I'm using VScode) will be able to infer types, and give you better error reporting.
-If you're using VScode, you can follow along easiest by hitting the two pane tab in the upper right hand corner.
-You code in a .ts (typescript) file, compile the .ts file into a .js file and then run.
+One important distinction is that Typescript compiles to PLAIN Javascript. This means that all of your Typescript
+will be invisible once compiled. Important to remember for down the road, or logic that involves Typescript you've
+written.
+You will code in a .ts (typescript) file, compile the .ts file into a .js file and then run your .js file.
 install typescript with:
 
 //npm install -g typescript
