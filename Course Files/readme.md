@@ -16,7 +16,9 @@ We will derive from Section 17, videos 254-261 - React with TypeScript
 ## Supplemental Material
 
 [A video guide to general TypeScript on the Curve](https://thecurve.redventures.com/share/asset/view/799)
+
 [Deep dive into React and TypeScript](https://basarat.gitbooks.io/TypeScript/docs/jsx/react.html)
+
 [React with TypeScript cheat sheet](https://github.com/TypeScript-cheatsheets/react-TypeScript-cheatsheet)
 
 ## Project
