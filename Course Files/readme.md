@@ -21,11 +21,12 @@ We will derive from Section 17, videos 254-261 - React with TypeScript
 
 ## Project
 
-For the final project, I'd like you to take your React 201 Giphy project and implement TypeScript in your main app.js/jsx file.
-See '9finalProject.js' for more info.
+For the final project, I'd like you to take your React 201 Giphy project and implement TypeScript. There will be a final solution provided upon project submission
 
----------- A Crash Course on TypeScript ----------
------ Installation -----
+# Optional Crash Course on TypeScript
+
+## Installation
+
 TypeScript helps to catch errors when writing code.
 TypeScript is Javascript where you've defined the 'types' you'd like your values to have.
 This way, your IDE (I'm using VScode) will be able to infer types, and give you better error reporting.
@@ -33,28 +34,29 @@ One important distinction is that TypeScript compiles to PLAIN Javascript. This 
 will be invisible once compiled. Important to remember for down the road, or logic that involves TypeScript you've
 written.
 You will code in a .ts (TypeScript) file, compile the .ts file into a .js file and then run your .js file.
-install TypeScript with:
 
-//npm install -g TypeScript
-//npm install -g ts-node
+### install TypeScript with:
 
-to execute code type:
-tsc and then your file name into the terminal, ie:
+> npm install -g TypeScript
+> npm install -g ts-node
 
-//tsc index.ts
+to execute code type `tsc` and then your file name into the terminal
 
-this compiles the code into a file called 'index.js', which you can run by typing:
+> tsc index.ts
 
-//node index.js
+this compiles the code into a file called `index.js` which you can run by typing:
 
-In order to turn these two steps into one, we've installed the 'ts-node' package. You can compile and run your code by typing:
+> node index.js
 
-//ts-node index.ts
+In order to turn these two steps into one we've installed the `ts-node` package. You can compile and run your code by typing
 
------ Types -----
-https://www.w3schools.com/js/js_datatypes.asp
+> ts-node index.ts
 
-Javascript's Data Types are as follows:
+## Types
+
+[A list of Data Types](https://www.w3schools.com/js/js_datatypes.asp)
+
+### Javascript's Data Types are as follows
 
 - String
 - Number
@@ -63,12 +65,11 @@ Javascript's Data Types are as follows:
 - Function
 - Object (arrays in JS are considered objects)
 
-TypeScript adds the following type definitions:
+### TypeScript adds the following type definitions:
 
 - Array
 - Tuple
-- Enum
-  (Enum's aren't available in vanilla javascipt, but are basically incremented values, a mix between a tuple and an object.)
+- Enum (Enum's aren't available in vanilla javascipt, but are basically incremented values, a mix between a tuple and an object.)
 - Any (let's you tell TS a value, input or output can be arbitrary or anything)
 - Void (Void is most commonly used when you have a function that doesn't return a value)
 - Null
@@ -76,14 +77,3 @@ TypeScript adds the following type definitions:
 - Object (the Object type will only accept non-primitive types)
 - Union (Unions are for when a value could have more than one type. Used with | and shown as: string | number | boolean)
 - Type assertions (More on this in '1variables.ts')
-
------ What to Expect -----
-In the file '1variables.ts' we'll first look at how to assign variables' data types
-'2functions.ts' will show us how to tell TypeScript what types we're passing into the function and what types we're expecting out
-'3objects.ts' gives us a look at how to define the types within an object and
-'4arrays.ts' helps us define arrays and nested arrays
-'5tuples.ts' covers tuples and use cases
-'6props.tsx' starts implementing TS into React with props
-'7state.tsx' will deep dive a bit into state and how React & TS initializes state
-'8funcComponents.tsx' is a quick peek into to annotating functional components
-'9finalProject.js' is your instructions for completing the project
