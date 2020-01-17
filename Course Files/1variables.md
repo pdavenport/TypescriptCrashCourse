@@ -18,7 +18,8 @@ An important benefit of Typescript is the ability to hover over the variable in 
 > let hasName: boolean = true;
 > let nothingMuch: null = null;
 > let nothing: undefined = undefined;
-> Again, all of these will be inferred if the type is not explicitly defined.
+
+Again, all of these will be inferred if the type is not explicitly defined.
 
 ### Built in objects can also be used as a type.
 
