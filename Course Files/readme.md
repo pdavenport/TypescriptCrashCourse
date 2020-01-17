@@ -1,7 +1,9 @@
----------- React Typescript ----------
-Requires: React 102
+# React Typescript
 
------ Learning Objectives -----
+### Requires: React 102
+
+## Learning Objectives
+
 A Typescript crashcourse with:
 -Variables
 -Functions
@@ -13,19 +15,20 @@ Implementing Typescript with React basics:
 -Typescript with State
 -Typescript in Functional Components
 
------ Online Course -----
+## Online Course
+
 https://redventures.udemy.com/course/typescript-the-complete-developers-guide/learn
 Section 17, 254-261 - React with Typescript
 
------ Supplemental Material -----
+## Supplemental Material
+
 A video guide to general Typescript on the Curve - https://thecurve.redventures.com/share/asset/view/799
 Deep dive into React and Typescript - https://basarat.gitbooks.io/typescript/docs/jsx/react.html
 
------ Project -----
+## Project
+
 For the final project, I'd like you to take your React 201 Giphy project and implement Typescript in your main app.js/jsx file.
 See '9finalProject.js' for more info.
-
-
 
 ---------- A Crash Course on Typescript ----------
 ----- Installation -----
@@ -42,7 +45,7 @@ install typescript with:
 //npm install -g ts-node
 
 to execute code type:
-tsc and then your file name into the terminal, ie: 
+tsc and then your file name into the terminal, ie:
 
 //tsc index.ts
 
@@ -58,6 +61,7 @@ In order to turn these two steps into one, we've installed the 'ts-node' package
 https://www.w3schools.com/js/js_datatypes.asp
 
 Javascript's Data Types are as follows:
+
 - String
 - Number
 - Boolean
@@ -66,10 +70,11 @@ Javascript's Data Types are as follows:
 - Object (arrays in JS are considered objects)
 
 Typescript adds the following type definitions:
+
 - Array
 - Tuple
 - Enum
-(Enum's aren't available in vanilla javascipt, but are basically incremented values, a mix between a tuple and an object.)
+  (Enum's aren't available in vanilla javascipt, but are basically incremented values, a mix between a tuple and an object.)
 - Any (let's you tell TS a value, input or output can be arbitrary or anything)
 - Void (Void is most commonly used when you have a function that doesn't return a value)
 - Null
