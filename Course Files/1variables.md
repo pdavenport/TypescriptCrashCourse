@@ -15,8 +15,11 @@ An important benefit of Typescript is the ability to hover over the variable in 
 ### More variables types
 
 > let speed: string = "fast";
+>
 > let hasName: boolean = true;
+>
 > let nothingMuch: null = null;
+>
 > let nothing: undefined = undefined;
 
 Again, all of these will be inferred if the type is not explicitly defined.
@@ -30,12 +33,15 @@ Typescript has many built-in interfaces (user-defined types), which we'll cover 
 ### Arrays will be covered in more detail in the `Arrays` directory
 
 > let colors: string[] = ["red", "green", "blue"];
+>
 > let myNumbers: number[] = [1, 2, 3];
+>
 > let truths: boolean[] = [true, true, false];
 
 ### Classes can also be used as a type
 
 > class Car {}
+>
 > let bmw: Car = new Car();
 
 ### Object literal
@@ -43,8 +49,11 @@ Typescript has many built-in interfaces (user-defined types), which we'll cover 
 Simply define the structure of the object after the name
 
 > let point: { x: number; y: number } = {
+>
 > x: 10,
+>
 > y: 20
+>
 > };
 
 ### Function (please note that here you are annotating the Constant, not the function itself)
@@ -52,14 +61,14 @@ Simply define the structure of the object after the name
 So this
 
 > const logNumber = i => {
+>
 > console.log(i);
+>
 > };
 
 Becomes this
 
-> const logNumber1: (i: number) => void = i => {
-> console.log(i);
-> };
+> `const logNumber1: (i: number) => void = i => {` > `console.log(i);` > `};`
 
 As you can see similar to the object literal, with functions the annotation looks like a copy of the function itself.
 We're defining the input 'i' as a number, then the output of the function as 'void'. Void is used when the function doesn't explicitly return a value.
