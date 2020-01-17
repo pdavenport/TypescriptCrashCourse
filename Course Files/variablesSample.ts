@@ -27,6 +27,38 @@ const logNumber = i => {
   console.log(i);
 };
 
-const logNumber: (i: number) => void = i => {
+const logNumber1: (i: number) => void = i => {
   console.log(i);
 };
+
+const json = '{"x": 10, "y": 20}';
+const coordinates = JSON.parse(json);
+
+const coordinates2: { x: number; y: number } = JSON.parse(json);
+
+let words = ["red", "green", "blue"];
+let foundWord: boolean;
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === "green") {
+    foundWord = true;
+  }
+}
+
+let numbers = [-10, -1, 12];
+let numberAboveZero: boolean | number;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
+
+interface Foo {
+  bar: number;
+  bas: string;
+}
+
+var two = {} as Foo;
+two.bar = 123;
+two.bas = "hello";
