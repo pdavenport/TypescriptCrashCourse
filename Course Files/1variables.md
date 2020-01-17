@@ -104,39 +104,56 @@ let foundWord
 you need to manually annotate or initialize foundWord here so that you avoid it having a type of 'any'.
 It would become:
 
-`foundWord: boolean`
+```
+foundWord: boolean
 
-`for (let i = 0` i < words.length`i++) {`if (words[i] === "green") {
-`foundWord = true`
-`}`}
+for (let i = 0 ; i < words.length ; i++) {if (words[i] === "green") {
+foundWord = true
+};};
+```
 
 3. Variable whose type cannot be inferred correctly
 
-`let numbers = [-10, -1, 12]`
-`let numberAboveZero` here you need to specify the type can be either number or boolean by using: (boolean | number)
-`let numberAboveZero: boolean | number
+```
+let numbers = [-10, -1, 12]
+let numberAboveZero
+```
 
-`for (let i = 0` i < numbers.length`i++) {`if (numbers[i] `0) {`numberAboveZero = numbers[i]``}
-`}
+here you need to specify the type can be either number or boolean by using `(boolean | number)`
 
-A side note on Type Assertions:
+```
+let numberAboveZero: boolean | number
+
+for (let i = 0 ; i < numbers.length ; i++) {if (numbers[i] > 0) {numberAboveZero = numbers[i]}
+}
+
+A side note on Type Assertions
 Type assertions are used in scenerios when you know more about a value than TS does. Often times this comes up when converting JS to TS,
 but we'll also see this later in React. For example:
 
-`var foo = {}`
-`foo.bar = 123`
-`foo.bas = "hello"`
+```
 
-You should see 'bar' and 'bas' have errors. When you hover over them, it says 'property bar does not exist on type {}'
+var foo = {}
+foo.bar = 123
+foo.bas = "hello"
+
+```
+
+You should see `bar` and `bas` have errors. When you hover over them, it says "property bar does not exist on type {}"
 This is due to type inferrence built into TS. TS is saying foo is type object with zero properties, because as we demonstrated above,
 in TS you need to define all the properties of the object as well as the object itself.
 To resolve this, we create an interface (a user-defined type) and Type Assert it. Basically we're overwriting TS and telling it
 we know more about this object than you can infer.
 
-`interface Foo {`bar: number`bas: string`}
+```
 
-`var two = {} as Foo`
-`two.bar = 123`
-`two.bas = "hello"`
+interface Foo {bar: number; bas: string}
 
-Now our Bar and Bas properties have no errors! Again, you'll see this later on in '7state.tsx'
+var two = {} as Foo
+two.bar = 123
+two.bas = "hello"
+
+```
+
+Now our Bar and Bas properties have no errors! Again, you'll see this later on in the React part of the course.
+```
