@@ -68,7 +68,11 @@ So this
 
 Becomes this
 
-> `const logNumber1: (i: number) => void = i => {` > `console.log(i);` > `};`
+```
+const logNumber1: (i: number) => void = i => {
+console.log(i);
+};
+```
 
 As you can see similar to the object literal, with functions the annotation looks like a copy of the function itself.
 We're defining the input 'i' as a number, then the output of the function as 'void'. Void is used when the function doesn't explicitly return a value.
