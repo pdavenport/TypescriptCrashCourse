@@ -1,14 +1,18 @@
----------- Typescript and Variables ----------
-You define a variable type after the variable name.
+## Typescript and Variables
+
+### You define a variable type after the variable name.
 
 > let apples = 2;
-> For example, we define the type of 'apples1' as a number:
+
+For example, we define the type of 'apples1' as a number:
+
 > let apples1: number = 5;
-> An important benefit of Typescript is the ability to hover over the variable and see the expected type (at least in VScode)
-> By default, Typescript will infer the type based on the initial declaration, so the above and below both have an expected type of 'number' (which you can check by hovering over 'apples1' or 'apples2')
+
+An important benefit of Typescript is the ability to hover over the variable in your IDE and see the expected type. By default, Typescript will infer the type based on the initial declaration, so the above and below both have an expected type of `number` (which you can check by hovering over `apples1` or `apples2`)
+
 > let apples2 = 5;
 
-More variables types:
+### More variables types
 
 > let speed: string = "fast";
 > let hasName: boolean = true;
@@ -16,22 +20,25 @@ More variables types:
 > let nothing: undefined = undefined;
 > Again, all of these will be inferred if the type is not explicitly defined.
 
-Built in objects can also be used as a type. Typescript has many built-in interfaces (user-defined types), which we'll cover later.
+### Built in objects can also be used as a type.
+
+Typescript has many built-in interfaces (user-defined types), which we'll cover later
 
 > let whatTimeIsItNow: Date = new Date();
 
-Arrays will be covered in more detail in the ./4arrays.ts file
+### Arrays will be covered in more detail in the `Arrays` directory
 
 > let colors: string[] = ["red", "green", "blue"];
 > let myNumbers: number[] = [1, 2, 3];
 > let truths: boolean[] = [true, true, false];
 
-Classes can also be used as a type
+### Classes can also be used as a type
 
 > class Car {}
 > let bmw: Car = new Car();
 
-Object literal
+### Object literal
+
 Simply define the structure of the object after the name
 
 > let point: { x: number; y: number } = {
@@ -39,14 +46,15 @@ Simply define the structure of the object after the name
 > y: 20
 > };
 
-Function (please note that here you are annotating the constant variable, not the function itself)
-So this:
+### Function (please note that here you are annotating the Constant, not the function itself)
+
+So this
 
 > const logNumber = i => {
 > console.log(i);
 > };
 
-Becomes this:
+Becomes this
 
 > const logNumber1: (i: number) => void = i => {
 > console.log(i);
