@@ -1,47 +1,41 @@
-# React Typescript
+# React With TypeScript
 
-### Requires: React 102
+Requires: React 102
 
 ## Learning Objectives
 
-A Typescript crashcourse with:
--Variables
--Functions
--Objects
--Arrays
--Tuples
-Implementing Typescript with React basics:
--Typescript and Props
--Typescript with State
--Typescript in Functional Components
+This is a short intro into using React with TypeScript. If you are unfamiliar with TypeScript, there is an optional quick intro into TypeScript included in the directory entitled "TypeScript 101"
+
+By the end of this course you will learn how to use TypeScript with React Props, State, and Functional Components.
 
 ## Online Course
 
-https://redventures.udemy.com/course/typescript-the-complete-developers-guide/learn
-Section 17, 254-261 - React with Typescript
+Feel free to follow along with the [video course](https://redventures.udemy.com/course/TypeScript-the-complete-developers-guide/learn), although it is optional.
+We will derive from Section 17, videos 254-261 - React with TypeScript
 
 ## Supplemental Material
 
-A video guide to general Typescript on the Curve - https://thecurve.redventures.com/share/asset/view/799
-Deep dive into React and Typescript - https://basarat.gitbooks.io/typescript/docs/jsx/react.html
+[A video guide to general TypeScript on the Curve](https://thecurve.redventures.com/share/asset/view/799)
+[Deep dive into React and TypeScript](https://basarat.gitbooks.io/TypeScript/docs/jsx/react.html)
+[React with TypeScript cheat sheet](https://github.com/TypeScript-cheatsheets/react-TypeScript-cheatsheet)
 
 ## Project
 
-For the final project, I'd like you to take your React 201 Giphy project and implement Typescript in your main app.js/jsx file.
+For the final project, I'd like you to take your React 201 Giphy project and implement TypeScript in your main app.js/jsx file.
 See '9finalProject.js' for more info.
 
----------- A Crash Course on Typescript ----------
+---------- A Crash Course on TypeScript ----------
 ----- Installation -----
-Typescript helps to catch errors when writing code.
-Typescript is Javascript where you've defined the 'types' you'd like your values to have.
+TypeScript helps to catch errors when writing code.
+TypeScript is Javascript where you've defined the 'types' you'd like your values to have.
 This way, your IDE (I'm using VScode) will be able to infer types, and give you better error reporting.
-One important distinction is that Typescript compiles to PLAIN Javascript. This means that all of your Typescript
-will be invisible once compiled. Important to remember for down the road, or logic that involves Typescript you've
+One important distinction is that TypeScript compiles to PLAIN Javascript. This means that all of your TypeScript
+will be invisible once compiled. Important to remember for down the road, or logic that involves TypeScript you've
 written.
-You will code in a .ts (typescript) file, compile the .ts file into a .js file and then run your .js file.
-install typescript with:
+You will code in a .ts (TypeScript) file, compile the .ts file into a .js file and then run your .js file.
+install TypeScript with:
 
-//npm install -g typescript
+//npm install -g TypeScript
 //npm install -g ts-node
 
 to execute code type:
@@ -69,7 +63,7 @@ Javascript's Data Types are as follows:
 - Function
 - Object (arrays in JS are considered objects)
 
-Typescript adds the following type definitions:
+TypeScript adds the following type definitions:
 
 - Array
 - Tuple
@@ -85,7 +79,7 @@ Typescript adds the following type definitions:
 
 ----- What to Expect -----
 In the file '1variables.ts' we'll first look at how to assign variables' data types
-'2functions.ts' will show us how to tell Typescript what types we're passing into the function and what types we're expecting out
+'2functions.ts' will show us how to tell TypeScript what types we're passing into the function and what types we're expecting out
 '3objects.ts' gives us a look at how to define the types within an object and
 '4arrays.ts' helps us define arrays and nested arrays
 '5tuples.ts' covers tuples and use cases
