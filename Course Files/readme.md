@@ -35,16 +35,16 @@ will be invisible once compiled. Important to remember for down the road, or log
 written.
 You will code in a .ts (TypeScript) file, compile the .ts file into a .js file and then run your .js file.
 
-### install TypeScript with:
+### Install TypeScript with:
 
 > npm install -g TypeScript
 > npm install -g ts-node
 
-to execute code type `tsc` and then your file name into the terminal
+To execute code type `tsc` and then your file name into the terminal
 
 > tsc index.ts
 
-this compiles the code into a file called `index.js` which you can run by typing:
+This compiles the code into a file called `index.js` which you can run by typing:
 
 > node index.js
 
@@ -56,7 +56,7 @@ In order to turn these two steps into one we've installed the `ts-node` package.
 
 [A list of Data Types](https://www.w3schools.com/js/js_datatypes.asp)
 
-### Javascript's Data Types are as follows
+### Javascript's Data Types
 
 - String
 - Number
@@ -65,15 +65,15 @@ In order to turn these two steps into one we've installed the `ts-node` package.
 - Function
 - Object (arrays in JS are considered objects)
 
-### TypeScript adds the following type definitions:
+### Additional TypeScript types
 
-- Array
-- Tuple
-- Enum (Enum's aren't available in vanilla javascipt, but are basically incremented values, a mix between a tuple and an object.)
-- Any (let's you tell TS a value, input or output can be arbitrary or anything)
-- Void (Void is most commonly used when you have a function that doesn't return a value)
-- Null
-- Never (Never represents values that will never occur, such as a function that throws an error, meaning it will never finish)
-- Object (the Object type will only accept non-primitive types)
+- [Array](https://www.typescriptlang.org/docs/handbook/basic-types.html#array)
+- [Tuple](https://www.typescriptlang.org/docs/handbook/basic-types.html#tuple)
+- [Enum](https://www.typescriptlang.org/docs/handbook/basic-types.html#enum) (Enum's aren't available in vanilla javascipt, but are basically incremented values, a mix between a tuple and an object.)
+- [Any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any) (let's you tell TS a value, input or output can be arbitrary or anything)
+- [Void](https://www.typescriptlang.org/docs/handbook/basic-types.html#void) (Void is most commonly used when you have a function that doesn't return a value)
+- [Null](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)
+- [Never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never) (Never represents values that will never occur, such as a function that throws an error, meaning it will never finish)
+- [Object](https://www.typescriptlang.org/docs/handbook/basic-types.html#object) (the Object type will only accept non-primitive types)
 - Union (Unions are for when a value could have more than one type. Used with | and shown as: string | number | boolean)
-- Type assertions (More on this in '1variables.ts')
+- Type assertions (More on this later in the course)
