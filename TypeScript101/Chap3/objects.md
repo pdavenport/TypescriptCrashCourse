@@ -17,6 +17,7 @@ const profile = {
 ### To destructure out different values and give them types,
 
 it's the same process as annotating a variable.
+So this:
 
 ```tsx
 const { age, name1 } = profile;
@@ -30,7 +31,8 @@ const { age, name1 }: { age: number; name1: string } = profile;
 
 ### To destructure out something a little more complex,
 
-you still destructure and then define what you're destructuring
+you still destructure and then define what you're destructuring.
+This:
 
 ```tsx
 const {
@@ -46,7 +48,7 @@ const {
 }: { coords: { lat: number; lng: number } } = profile;
 ```
 
-Notice how the definition values mirror the destructured values.
+Notice how the type definition values mirror the destructured values.
 
 ### Had the initial object been an Object Literal,
 
