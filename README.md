@@ -39,20 +39,28 @@ You will code in a .ts (TypeScript) file, compile the .ts file into a .js file a
 
 ### Install TypeScript with:
 
-> npm install -g TypeScript
-> npm install -g ts-node
+```c
+npm install -g TypeScript
+npm install -g ts-node
+```
 
 To execute code type `tsc` and then your file name into the terminal
 
-> tsc index.ts
+```c
+tsc index.ts
+```
 
 This compiles the code into a file called `index.js` which you can run by typing:
 
-> node index.js
+```c
+node index.js
+```
 
 In order to turn these two steps into one we've installed the `ts-node` package. You can compile and run your code by typing
 
-> ts-node index.ts
+```c
+ts-node index.ts
+```
 
 ## Types
 
