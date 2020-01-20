@@ -4,7 +4,7 @@
 
 For example, we define the type of 'apples' as a number:
 
-```
+```tsx
 let apples = 5;
 let apples: number = 5;
 ```
@@ -15,7 +15,7 @@ An important benefit of Typescript is the ability to hover over the variable in 
 
 ### More variables types
 
-```
+```tsx
 let speed: string = "fast";
 let hasName: boolean = true;
 let nothingMuch: null = null;
@@ -32,7 +32,7 @@ Typescript has many built-in interfaces (user-defined types), which we'll cover 
 
 ### Arrays
 
-```
+```tsx
 let colors: string[] = ["red", "green", "blue"];
 let myNumbers: number[] = [1, 2, 3];
 let truths: boolean[] = [true, true, false];
@@ -40,7 +40,7 @@ let truths: boolean[] = [true, true, false];
 
 ### Classes
 
-```
+```tsx
 class Car {}
 let bmw: Car = new Car();
 ```
@@ -49,29 +49,29 @@ let bmw: Car = new Car();
 
 Simply define the structure of the object after the name
 
-```
-let point: { x: number ; y: number } = {
-x: 10,
-y: 20
+```tsx
+let point: { x: number; y: number } = {
+  x: 10,
+  y: 20
 };
 ```
 
 ### Functions
 
-Please note that here you are annotating the Constant, not the function itself.
+Please note that here you are annotating the constant, not the function itself.
 
-```
+```tsx
 const logNumber = i => {
-console.log(i);
-}
+  console.log(i);
+};
 ```
 
 Becomes
 
-```
+```tsx
 const logNumber: (i: number) => void = i => {
-console.log(i);
-}
+  console.log(i);
+};
 ```
 
 Similar to the object literal the annotation looks like a copy of the function itself.
@@ -81,7 +81,7 @@ We're defining the input `i` as a number, then the output of the function as 'vo
 
 ### 1. Function that returns the 'any' type
 
-```
+```tsx
 const json = '{"x": 10, "y": 20}';
 const coordinates = JSON.parse(json);
 ```
@@ -95,7 +95,7 @@ Now when you hover over `coordinates`, you should see the structure of json.
 
 ### 2. When we declare a variable on one line and initializate it later
 
-```
+```tsx
 let words = ["red", "green", "blue"];
 let foundWord: boolean;
 
@@ -108,18 +108,18 @@ for (let i = 0; i < words.length; i++) {
 
 ### 3. Variable whose type cannot be inferred correctly
 
-```
+```tsx
 let numbers = [-10, -1, 12];
 let numberAboveZero;
 ```
 
 here you need to specify the type can be either number or boolean by using `boolean | number`
 
-```
+```tsx
 let numberAboveZero: boolean | number;
 
-for (let i = 0 ; i < numbers.length ; i++){
-  if (numbers[i] > 0){
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
     numberAboveZero = numbers[i];
   }
 }
@@ -130,7 +130,7 @@ for (let i = 0 ; i < numbers.length ; i++){
 Type assertions are used in scenerios when you know more about a value than TS does. Often times this comes up when converting JS to TS,
 but we'll also see this later in React. For example:
 
-```
+```tsx
 var foo = {};
 foo.bar = 123;
 foo.bas = "hello";
@@ -142,7 +142,7 @@ in TS you need to define all the properties of the object as well as the object 
 To resolve this, we create an interface (a user-defined type) and Type Assert it. Basically we're overwriting TS and telling it
 we know more about this object than you can infer.
 
-```
+```tsx
 interface Foo {
   bar: number;
   bas: string;
