@@ -1,6 +1,6 @@
 ## Annotating Functions
 
-### In TS, we need to define our function inputs and ouputs. There are two ways we can do this.
+### In TypeScript we need to define our function inputs and ouputs. There are two ways we can do this.
 
 Take this sample function below. We can annotate our arguments like normal variables, and then annotate the output after the argument list.
 
@@ -18,7 +18,7 @@ const subtract: (a: number, b: number) => number = (a, b) => {
 };
 ```
 
-Or:
+or:
 
 ```tsx
 function divide(a: number, b: number): number {
@@ -26,11 +26,11 @@ function divide(a: number, b: number): number {
 }
 ```
 
-It doesn't matter the arithmatic inside the function, if you do not return a number, TypeScript will know and you will recieve an error.
+It doesn't matter the arithmatic inside the function, if you do not return a number TypeScript will know :flushed: and you will recieve an error.
 
 ### If your function doesn't return anything,
 
-perhaps just changes a variable, you can define the output type as 'void'
+perhaps just changes a variable, you can define the output type as `void`
 
 ```tsx
 const logger = (message: string): void => {
@@ -76,7 +76,7 @@ const logWeather2 = ({ date, weather }) => {
 };
 ```
 
-To define the expected types using ES2015 destructuring, just replace 'forecast' with the destructuring from above
+To define the expected types using ES2015 destructuring, just replace `forecast` with the destructuring from above
 
 ```tsx
 const logWeather3 = (forecast: { date: Date; weather: string }): void => {
@@ -90,7 +90,7 @@ const logWeather3 = ({ date, weather }: { date: Date; weather: string }): void =
 console.log(date)
 ```
 
-With proper formatting:
+and with proper formatting:
 
 ```tsx
 const logWeather3 = ({
