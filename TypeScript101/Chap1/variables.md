@@ -79,7 +79,7 @@ We're defining the input `i` as a number, then the output of the function as 'vo
 
 ### When to use annotations
 
-#### 1. Function that returns the 'any' type
+### 1. Function that returns the 'any' type
 
 ```
 const json = '{"x": 10, "y": 20}';
@@ -93,7 +93,7 @@ To fix this problem, we would define the type at the constant `coordinates`. Thi
 
 Now when you hover over `coordinates`, you should see the structure of json.
 
-#### 2. When we declare a variable on one line and initializate it later
+### 2. When we declare a variable on one line and initializate it later
 
 ```
 let words = ["red", "green", "blue"];
@@ -106,7 +106,7 @@ for (let i = 0; i < words.length; i++) {
 }
 ```
 
-#### 3. Variable whose type cannot be inferred correctly
+### 3. Variable whose type cannot be inferred correctly
 
 ```
 let numbers = [-10, -1, 12];

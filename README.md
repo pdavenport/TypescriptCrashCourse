@@ -4,7 +4,7 @@ Requires: React 102
 
 ## Learning Objectives
 
-This is a short intro into using React with TypeScript. If you are unfamiliar with TypeScript, there is an optional quick intro into TypeScript included in the directory entitled "TypeScript 101"
+This is a short intro into using React with TypeScript. If you are unfamiliar with TypeScript, there is an optional quick intro into TypeScript included in the directory entitled "TypeScript101"
 
 Most of the courses will have a `Sample.ts` file to open in your IDE and follow along with
 
