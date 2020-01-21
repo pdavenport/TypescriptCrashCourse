@@ -1,4 +1,4 @@
-### Next up we're going to keep tweaking our `index.jsx` file to add a bit more functionality
+## Next up we're going to keep tweaking our `index.jsx` file to add a bit more functionality
 
 ```tsx
 import React from "react";
