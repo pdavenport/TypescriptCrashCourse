@@ -2,7 +2,7 @@
 
 In your terminal, type:
 
-```c
+```C
 npx create-react-app rrts --template typescript
 ```
 
@@ -28,7 +28,15 @@ class App extends React.Component {
 ReactDom.render(<App color="red" />, document.querySelector("#root"));
 ```
 
-If you'll notice, once you paste the code in, `this.props.color` and `App color="red"` both throw an error.
+If you'll notice, once you paste the code in,
+
+```tsx
+this.props.color
+// and
+App color="red"
+```
+
+both throw an error.
 
 One of the most basic ways we work with components in Typescript is to create an interface that describes
 the different props that we're going to pass into a component
