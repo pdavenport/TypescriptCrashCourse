@@ -106,3 +106,57 @@ const logWeather3 = ({
 
 logWeather(todaysWeather);
 ```
+
+## Generic Functions
+
+Often times you'll run into the scenario where you'd like to create a function that will be used in many places but are not sure what exactly will be passed into the function. A perfect example of this would be something like an `echo` function:
+
+```tsx
+function echoThis(input) {
+  return input;
+}
+
+console.log(echoThis(1)); // 1
+```
+
+Because we're not certain of what will eventually be passed in, we cannot annotate this function.
+What can be done to circumvent this issue is to pass is in what's called a "type variable" whenever we call our function. Firstly, we'll add something in arrows before the arguments, the annotate the input and output the same:
+
+```tsx
+function echoThis<typeVar>(input: typeVar): typeVar {
+  return input;
+}
+```
+
+now, whenever we call this function, we can specify what type will actually be going into the function:
+
+```tsx
+function echoThis<typeVar>(input: typeVar): typeVar {
+  return input;
+}
+
+console.log(echoThis<number>(1)); // 1
+console.log(echoThis<string>("hello")); // 'hello'
+```
+
+Similarly, if we're passing in an object, class, or something more complex, we can create an interface for that object or class and pass that to our function as the type variable.
+
+```tsx
+var shape = {
+  color: blue,
+  shape: square,
+  height: 2
+};
+
+interface objInterface {
+  color: string;
+  shape: string;
+  height: number;
+}
+
+function echoThis<typeVar>(input: typeVar): typeVar {
+  return input;
+}
+
+console.log(echoThis<objInterface>(shape)); // {color: blue, shape: square, height: 2}
+```
