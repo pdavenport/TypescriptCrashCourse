@@ -1,4 +1,4 @@
-# React With TypeScript
+# React with TypeScript
 
 Requires: React 102
 
@@ -6,7 +6,7 @@ Requires: React 102
 
 This is a short intro into using React with TypeScript. If you are unfamiliar with TypeScript, there is an optional quick intro into TypeScript included in the directory entitled "TypeScript101"
 
-Most of the courses will have a `Sample.ts` file to open in your IDE and follow along with
+Most of the courses will have a `Sample.ts` file to open in your IDE and follow along with.
 
 By the end of this course you will learn how to use TypeScript with React Props, State, and Functional Components.
 
